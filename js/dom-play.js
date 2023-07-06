@@ -13,3 +13,41 @@
 */
 
 //document.querySelector(".Hamlet").style.backgroundColor = " Yellow"
+
+function highlight (el){
+
+    if(el.style.backgroundColor == 'white'){//orange
+        el.style.backgroundColor= 'orange';
+    }else{//white
+        el.style.backgroundColor= 'white';
+    }    
+   
+ }
+
+
+function myAlert(){
+    alert("I'm Clicked! ");
+ }
+
+function highlightActor(actor){
+    //alert("Hi i am "+ actor);
+    for(const mySpan of spans)
+
+    {if(actor == mySpan.dataset.actor ){//orange
+        mySpan.style.backgroundColor= 'orange';
+    }else{//white
+        mySpan.style.backgroundColor= 'white';
+    }  }
+}
+
+ const spans = document.querySelectorAll("#play span");
+ console.log(spans);
+
+
+ for(const mySpan of spans){
+   // mySpan.addEventListener("click",myAlert);
+    mySpan.addEventListener("click",function(ev){
+        highlightActor(mySpan.dataset.actor);
+    });
+    //alert(mySpan.dataset.actor);
+ }
