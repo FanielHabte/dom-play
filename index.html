@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>Title Goes Here</title>
+  <title>Dom Play </title>
       <meta charset="utf-8" />
       <meta name="robots" content="noindex,nofollow" />
       <meta name="viewport" content="width=device-width" />
@@ -25,27 +25,45 @@
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Dom-Play</h1>
         <nav class="topnav" id="myTopnav">
           <a href="index.html" class="active">Home</a>
-          <a href="#" target="_blank">Name of project goes here</a>
+          <a href="#" target="_blank"> Dom-Play</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
   <main class="wrapper">
 <div id="play">
-  <p> <span data-actor="hamlet">Hamlet:To be or no to be?</span>  </p>
-  <p> <span data-actor="skull">Skull: are you talking to me?</span> </p >
-  <p> <span data-actor="hamlet"> Hamlet:  what did you say?</span> </p>
-  <p> <span data-actor="skull">Skull: I cant talk i am only a skull?</span> </p>
-  <p> <span data-actor="hamlet"> Hamlet: good because i thought i was going crazy ?</span> </p>
+  <p> <span data-actor="Not-true"> Barley </span></p>
+  <p> <span data-actor="True"> Banana </span></p>
+  <p> <span data-actor="Not-true"> Wheat </span></p>
+  <p> <span data-actor="True">Apple</span> </p>
+  <p> <span data-actor="True"> Orange</span> </p>
+  <p> <span data-actor="Not-true"> Sorghum </span></p>
 </div>
-    
+  <p> 
+    This website is a basic HTML page that utilizes JavaScript to enhance user interaction. It contains a series of span
+    elements within a div with the id "play". Each span element has a data-actor attribute that holds either
+    "Not-true" or "True" as its value.
+  
+    The JavaScript code adds event listeners to these span elements. When a span is clicked, the
+    highlightActor(actor) function is invoked, passing the value of its data-actor attribute as an argument.
+    Inside the function, the background color of the span elements is modified based on the provided actor
+    argument.
+  
+    If the actor is equal to the data-actor value of the span element, its background color is changed to
+    orange. Otherwise, the background color is set to green. This creates a visual distinction between the
+    "True" and "Not-true" actors when they are clicked. The true and not true respresent the values which 
+    are fuits or cereals and the backgoround color is used to distinguish between them.
+
+    In summary, this website demonstrates a simple interactive feature where clicking on the span elements
+    triggers a JavaScript function that highlights the actors based on their data-actor values. It provides
+    a visual feedback to the user by changing the background color of the clicked span element. </p>
      <footer>
       <p><small>&copy; 2021 by 
          Faniel Habte, All Rights Reserved ~ 
-          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="html-checker" href="#">Check HTML</a> 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
