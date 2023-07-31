@@ -14,42 +14,21 @@
 
 //document.querySelector(".Hamlet").style.backgroundColor = " Yellow"
 
-function highlight (el){
-
-    if(el.style.backgroundColor == 'white'){//orange
-        el.style.backgroundColor= 'orange';
-    }else{//white
-        el.style.backgroundColor= 'white';
-    }    
-   
- }
-
-
-function myAlert(){
-    alert("I'm Clicked! ");
- }
-
-function highlightActor(actor){
-    //alert("Hi i am "+ actor);
-    for(const mySpan of spans)
-
-    {if(actor == mySpan.dataset.actor ){//orange
-        mySpan.style.backgroundColor= 'Orange';
+function highlightActor(actor) {
+    const spans = document.querySelectorAll("#play span");
+    for (const mySpan of spans) {
+        if (actor === mySpan.dataset.actor) {
+            mySpan.style.backgroundColor = 'Orange';
+        } else {
+            mySpan.style.backgroundColor = 'white';
+        }
     }
-    
-    else{//white
-        mySpan.style.backgroundColor= 'green';
-    }  }
 }
 
- const spans = document.querySelectorAll("#play span");
- console.log(spans);
+const spans = document.querySelectorAll("#play span");
 
-
- for(const mySpan of spans){
-   // mySpan.addEventListener("click",myAlert);
-    mySpan.addEventListener("click",function(ev){
+for (const mySpan of spans) {
+    mySpan.addEventListener("click", function (ev) {
         highlightActor(mySpan.dataset.actor);
     });
-    //alert(mySpan.dataset.actor);
- }
+}
